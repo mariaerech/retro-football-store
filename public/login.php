@@ -33,12 +33,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <html lang="pt-br">
     <head>
         <meta charset="UTF-8">
-        <title>Login - Camisas Imortais</title>
+        <title>Login - Retro Jerseys</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <header>
-            <h1>Camisas Imortais</h1>
+            <h1>Retro Jerseys</h1>
             <nav class="menu">
             <a href="index.php">Home</a>
             <a href="login.php">Login</a>

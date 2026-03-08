@@ -11,12 +11,12 @@ $produtos = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Camisas Imortais - Home</title>
+  <title>Retro Jerseys - Home</title>
   <link rel="stylesheet" href="style.css">
 </head>
   <body>
     <header>
-      <h1>Camisas Imortais</h1>
+      <h1>Retro Jerseys</h1>
       <nav class="menu">
         <a href="index.php">Home</a>
         <a href="login.php">Login</a>
