@@ -88,7 +88,6 @@ DB_PASS=root
 - Formulário de cadastro de produtos
 - Implementação de carrinho de compras
 - Validações mais robustas
-- Script `database/schema.sql` para facilitar a criação do banco
 
 ## ⚙️ Como executar o projeto localmente
 
@@ -115,7 +114,12 @@ cp .env.example .env
 O `.env` já vem com valores padrão compatíveis com o comando Docker acima (`root`/`root`), então na maioria dos casos não precisa alterar nada.
 
 ### 4. Crie as tabelas
-Acesse o MySQL do container e execute os scripts `CREATE TABLE` (disponíveis na pasta `database/`, quando publicados).
+Execute o script `database/schema.sql` no banco criado. Uma forma simples de fazer isso é copiar o arquivo para dentro do container e rodá-lo:
+```bash
+docker cp database/schema.sql mysql-retro:/schema.sql
+docker exec -it mysql-retro mysql -u root -p retro_jerseys -e "source /schema.sql"
+```
+(vai pedir a senha configurada no `.env`)
 
 ### 5. Inicie o servidor PHP
 ```bash
