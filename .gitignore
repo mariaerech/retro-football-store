@@ -1,0 +1,13 @@
+#variáveis de ambiente (contém credenciais locais)
+.env
+
+#dependências
+/vendor
+/node_modules
+
+#arquivos de sistema
+.DS_Store
+Thumbs.db
+
+#logs
+*.log
